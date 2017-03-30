@@ -54,6 +54,7 @@
 		71E9E45A1E8D635D00717D69 /* SkillTables */ = {
 			isa = PBXGroup;
 			children = (
+				71E9E46D1E8D66FD00717D69 /* Modules */,
 				71E9E45B1E8D635D00717D69 /* AppDelegate.swift */,
 				71E9E45D1E8D635D00717D69 /* ViewController.swift */,
 				71E9E4621E8D635D00717D69 /* Assets.xcassets */,
@@ -62,6 +63,13 @@
 				71E9E45F1E8D635D00717D69 /* SkillTables.xcdatamodeld */,
 			);
 			path = SkillTables;
+			sourceTree = "<group>";
+		};
+		71E9E46D1E8D66FD00717D69 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
