@@ -18,8 +18,8 @@ class Account: AccountItem {
     var comment:String  = ""
     
     //MARK: Other
-    var description:String {
-        return "\(id) name:\(name) balance:\(balance) comment:\(comment)"
+    var description: String {
+        return " \(id) name:\(name) balance:\(balance) comment:\(comment)"
     }
     
     init(){}
@@ -51,7 +51,17 @@ extension Account {
 }
 
 
+public enum ColumnName:String{
+    case Name = "Name"
+    case ID = "Id"
+    case Comment = "Comment"
+    case Balance = "Balance"
+}
+
+
+
 class Accounts{
+    
     
     var arAccounts:NSMutableArray = []
     

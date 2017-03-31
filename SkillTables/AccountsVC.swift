@@ -15,7 +15,7 @@ class AccountsVC: NSViewController, NSTableViewDelegate, NSTableViewDataSource{
         static let Name = "nameColumnId"
         static let Balance = "balanceColumnId"
         static let Comment = "commentColumnId"
-        static let ID = "IDColumntId"
+        static let ID = "IDColumnId"
     }
     
     @IBOutlet weak var uiTable: NSTableView!
@@ -46,30 +46,37 @@ class AccountsVC: NSViewController, NSTableViewDelegate, NSTableViewDataSource{
         return ""
     }
     
+
+    
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
 
         
         let account = accounts.arAccounts.object(at: row) as! Account
        
+        let columnID = tableColumn?.identifier
         
        
-        let columnID = tableColumn?.identifier
         
         if let cell = tableView.make(withIdentifier: columnID!, owner: nil) as? NSTableCellView {
             if  tableColumn?.identifier == columnsIdentifiers.Name {
-                 print(account.description)
+                tableColumn?.headerCell.title = ColumnName.Name.rawValue
+                print(account.description)
+                
                 cell.textField?.stringValue = account.name
             }
             
             if  tableColumn?.identifier == columnsIdentifiers.Balance {
+                 tableColumn?.headerCell.title = ColumnName.Balance.rawValue
                 cell.textField?.stringValue = account.balance.stringValue
             }
             
             if tableColumn?.identifier == columnsIdentifiers.Comment {
+                 tableColumn?.headerCell.title = ColumnName.Comment.rawValue
                 cell.textField?.stringValue = account.comment
             }
             
             if  tableColumn?.identifier == columnsIdentifiers.ID {
+                 tableColumn?.headerCell.title = ColumnName.ID.rawValue
                 cell.textField?.stringValue = account.id.stringValue
             }
             
@@ -77,10 +84,6 @@ class AccountsVC: NSViewController, NSTableViewDelegate, NSTableViewDataSource{
         }
         return nil
     }
-    
-
-    
-    
     
     
     //MERK: Context Menu
