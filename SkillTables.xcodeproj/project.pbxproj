@@ -12,6 +12,10 @@
 		71E9E4611E8D635D00717D69 /* SkillTables.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E45F1E8D635D00717D69 /* SkillTables.xcdatamodeld */; };
 		71E9E4631E8D635D00717D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E9E4621E8D635D00717D69 /* Assets.xcassets */; };
 		71E9E4661E8D635D00717D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E9E4641E8D635D00717D69 /* Main.storyboard */; };
+		71E9E4701E8D7F5400717D69 /* MainTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E46F1E8D7F5400717D69 /* MainTabs.swift */; };
+		71E9E4761E8D842500717D69 /* AccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E4751E8D842500717D69 /* AccountsVC.swift */; };
+		71E9E47A1E8D8C7D00717D69 /* AccountItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E4791E8D8C7D00717D69 /* AccountItem.swift */; };
+		71E9E47C1E8E3F9500717D69 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E47B1E8E3F9500717D69 /* Accounts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		71E9E4621E8D635D00717D69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71E9E4651E8D635D00717D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71E9E4671E8D635D00717D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E9E46F1E8D7F5400717D69 /* MainTabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabs.swift; sourceTree = "<group>"; };
+		71E9E4751E8D842500717D69 /* AccountsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsVC.swift; sourceTree = "<group>"; };
+		71E9E4791E8D8C7D00717D69 /* AccountItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountItem.swift; sourceTree = "<group>"; };
+		71E9E47B1E8E3F9500717D69 /* Accounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,8 @@
 		71E9E45A1E8D635D00717D69 /* SkillTables */ = {
 			isa = PBXGroup;
 			children = (
+				71E9E4781E8D894000717D69 /* Common */,
 				71E9E46D1E8D66FD00717D69 /* Modules */,
-				71E9E45B1E8D635D00717D69 /* AppDelegate.swift */,
 				71E9E45D1E8D635D00717D69 /* ViewController.swift */,
 				71E9E4621E8D635D00717D69 /* Assets.xcassets */,
 				71E9E4641E8D635D00717D69 /* Main.storyboard */,
@@ -68,8 +76,68 @@
 		71E9E46D1E8D66FD00717D69 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				71E9E46E1E8D7EAE00717D69 /* Tabs */,
+				71E9E4721E8D836D00717D69 /* Accounts */,
 			);
 			name = Modules;
+			sourceTree = "<group>";
+		};
+		71E9E46E1E8D7EAE00717D69 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				71E9E4711E8D7FF500717D69 /* Controller */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		71E9E4711E8D7FF500717D69 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				71E9E46F1E8D7F5400717D69 /* MainTabs.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		71E9E4721E8D836D00717D69 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				71E9E4771E8D893300717D69 /* Model */,
+				71E9E4731E8D83EF00717D69 /* View */,
+				71E9E4741E8D83F800717D69 /* Controller */,
+			);
+			name = Accounts;
+			sourceTree = "<group>";
+		};
+		71E9E4731E8D83EF00717D69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		71E9E4741E8D83F800717D69 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				71E9E4751E8D842500717D69 /* AccountsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		71E9E4771E8D893300717D69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71E9E4791E8D8C7D00717D69 /* AccountItem.swift */,
+				71E9E47B1E8E3F9500717D69 /* Accounts.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		71E9E4781E8D894000717D69 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				71E9E45B1E8D635D00717D69 /* AppDelegate.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E9E47C1E8E3F9500717D69 /* Accounts.swift in Sources */,
+				71E9E4761E8D842500717D69 /* AccountsVC.swift in Sources */,
+				71E9E4701E8D7F5400717D69 /* MainTabs.swift in Sources */,
+				71E9E47A1E8D8C7D00717D69 /* AccountItem.swift in Sources */,
 				71E9E45E1E8D635D00717D69 /* ViewController.swift in Sources */,
 				71E9E45C1E8D635D00717D69 /* AppDelegate.swift in Sources */,
 				71E9E4611E8D635D00717D69 /* SkillTables.xcdatamodeld in Sources */,
@@ -301,6 +373,7 @@
 				71E9E46C1E8D635D00717D69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
