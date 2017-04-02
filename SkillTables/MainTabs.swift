@@ -15,7 +15,4 @@ class MainTabs: NSTabViewController {
         // Do view setup here.
     }
     
-    @IBAction func menuQuit(_ sender: Any) {
-        exit(0)
-    }
 }

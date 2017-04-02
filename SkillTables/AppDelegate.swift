@@ -166,6 +166,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // If we got here, it is time to quit.
         return .terminateNow
     }
+    
+    @IBAction func menuAboutApp(_ sender: Any) {
+        
+        let about = AboutApp(nibName: "AboutApp", bundle: nil)
+        about?.presentViewControllerAsModalWindow(about!)
+        print("About Application")
+    }
+    
+    
 
 }
 

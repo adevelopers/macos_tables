@@ -16,6 +16,8 @@
 		71E9E4761E8D842500717D69 /* AccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E4751E8D842500717D69 /* AccountsVC.swift */; };
 		71E9E47A1E8D8C7D00717D69 /* AccountItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E4791E8D8C7D00717D69 /* AccountItem.swift */; };
 		71E9E47C1E8E3F9500717D69 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E47B1E8E3F9500717D69 /* Accounts.swift */; };
+		71E9E4811E91A1AA00717D69 /* AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E47F1E91A1AA00717D69 /* AboutApp.swift */; };
+		71E9E4821E91A1AA00717D69 /* AboutApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E9E4801E91A1AA00717D69 /* AboutApp.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		71E9E4751E8D842500717D69 /* AccountsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsVC.swift; sourceTree = "<group>"; };
 		71E9E4791E8D8C7D00717D69 /* AccountItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountItem.swift; sourceTree = "<group>"; };
 		71E9E47B1E8E3F9500717D69 /* Accounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		71E9E47F1E91A1AA00717D69 /* AboutApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutApp.swift; sourceTree = "<group>"; };
+		71E9E4801E91A1AA00717D69 /* AboutApp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutApp.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 		71E9E46D1E8D66FD00717D69 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				71E9E47D1E91A15400717D69 /* AboutApp */,
 				71E9E46E1E8D7EAE00717D69 /* Tabs */,
 				71E9E4721E8D836D00717D69 /* Accounts */,
 			);
@@ -140,6 +145,23 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		71E9E47D1E91A15400717D69 /* AboutApp */ = {
+			isa = PBXGroup;
+			children = (
+				71E9E47E1E91A17600717D69 /* View */,
+			);
+			name = AboutApp;
+			sourceTree = "<group>";
+		};
+		71E9E47E1E91A17600717D69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71E9E47F1E91A1AA00717D69 /* AboutApp.swift */,
+				71E9E4801E91A1AA00717D69 /* AboutApp.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71E9E4631E8D635D00717D69 /* Assets.xcassets in Resources */,
+				71E9E4821E91A1AA00717D69 /* AboutApp.xib in Resources */,
 				71E9E4661E8D635D00717D69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +240,7 @@
 				71E9E4701E8D7F5400717D69 /* MainTabs.swift in Sources */,
 				71E9E47A1E8D8C7D00717D69 /* AccountItem.swift in Sources */,
 				71E9E45E1E8D635D00717D69 /* ViewController.swift in Sources */,
+				71E9E4811E91A1AA00717D69 /* AboutApp.swift in Sources */,
 				71E9E45C1E8D635D00717D69 /* AppDelegate.swift in Sources */,
 				71E9E4611E8D635D00717D69 /* SkillTables.xcdatamodeld in Sources */,
 			);
