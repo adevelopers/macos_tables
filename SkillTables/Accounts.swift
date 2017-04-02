@@ -79,5 +79,9 @@ class Accounts{
 
     }
     
+    //MARK: Вспомогательные
+    func getLastID() -> NSNumber {
+        return NSNumber(value: arAccounts.count + 1)
+    }
     
 }

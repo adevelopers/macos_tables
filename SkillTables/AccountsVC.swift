@@ -37,6 +37,8 @@ class AccountsVC: NSViewController, NSTableViewDelegate, NSTableViewDataSource{
         
     }
     
+
+    
     //MARK: NSTableView
     func numberOfRows(in tableView: NSTableView) -> Int {
         return accounts.arAccounts.count
@@ -50,12 +52,8 @@ class AccountsVC: NSViewController, NSTableViewDelegate, NSTableViewDataSource{
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
 
-        
         let account = accounts.arAccounts.object(at: row) as! Account
-       
         let columnID = tableColumn?.identifier
-        
-       
         
         if let cell = tableView.make(withIdentifier: columnID!, owner: nil) as? NSTableCellView {
             if  tableColumn?.identifier == columnsIdentifiers.Name {
@@ -91,5 +89,11 @@ class AccountsVC: NSViewController, NSTableViewDelegate, NSTableViewDataSource{
         exit(0)
     }
     
+    @IBAction func menuAdd(_ sender: Any) {
+        let newAccount = Account()
+        newAccount.setup(accounts.getLastID(), "Мастер", 324 )
+        accounts.arAccounts.add(newAccount)
+        uiTable.reloadData()
+    }
     
 }

@@ -887,8 +887,11 @@
                 <customObject id="2Gw-ef-rSe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <menu id="suY-Uf-ZNj">
                     <items>
-                        <menuItem title="Item 1" id="ChF-4u-I65">
+                        <menuItem title="Add" id="ChF-4u-I65">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="menuAdd:" target="HUq-HQ-QtK" id="7Eu-Kz-cNo"/>
+                            </connections>
                         </menuItem>
                         <menuItem title="Item 2" id="EDB-ZB-wdx">
                             <modifierMask key="keyEquivalentModifierMask"/>
